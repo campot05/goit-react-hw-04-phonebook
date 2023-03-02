@@ -1,7 +1,6 @@
 import PropTypes from 'prop-types';
 import css from './ContactList.module.css';
-const ContactList = ({ contacts, deleteContact }) => {
-  console.log(contacts);
+export const ContactList = ({ contacts, deleteContact }) => {
   return (
     <ul className={css.list}>
       {contacts.map(({ id, name, number }) => {
@@ -17,8 +16,6 @@ const ContactList = ({ contacts, deleteContact }) => {
     </ul>
   );
 };
-
-export default ContactList;
 
 ContactList.propTypes = {
   contacts: PropTypes.arrayOf(

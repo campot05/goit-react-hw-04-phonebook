@@ -2,7 +2,7 @@ import { useState, useEffect } from 'react';
 import { nanoid } from 'nanoid';
 import { Notify } from 'notiflix/build/notiflix-notify-aio';
 import ContactForm from './ContactForm';
-import ContactList from './ContactList';
+import { ContactList } from './ContactList';
 import Filter from './Filter';
 
 function App() {
